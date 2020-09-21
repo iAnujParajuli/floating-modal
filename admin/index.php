@@ -7,11 +7,11 @@
             <button class="button button-primary"><?= (get_option("flm_status") == 1) ? "Deactivate" : "Activate" ?> Plugin</button>
         </form>
     </header>
-    <?php if (get_option("flm_status")):  ?>
-        <?php $modalData = get_option("flm_modal_data");
-            if ($modalData):
-                $modalData = json_decode($modalData, true); ?>
-            <script>var modalData = <?= json_encode($modalData) ?></script>
+    <script>var modalData = null;</script>
+    <?php $modalData = get_option("flm_modal_data");
+        if ($modalData !== null):
+            $modalData = json_decode($modalData, true); ?>
+            <script>modalData = <?= json_encode($modalData) ?></script>
         <?php endif;  ?>
     <form method="post" class="flm-form" action="admin.php">
         <?php wp_nonce_field('flm-model-form'); ?>
@@ -75,7 +75,6 @@
         </div>
         <button class="button button-primary">Save Changes</button>
     </form>
-    <?php endif; ?>
 </div>
 <link rel="stylesheet" href="<?= FLM_BASE_URL ?>libs/css/style.css">
 <script src="<?= FLM_BASE_URL ?>libs/js/index.js"></script>

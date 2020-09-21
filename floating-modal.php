@@ -1,14 +1,29 @@
 <?php
 /**
  * Plugin Name:       Floating Modal
- * Plugin URI:
- * Description:       Add a modal with delivery information to your website
+ * Plugin URI:        https://github.com/anuzz/floating-modal
+ * Description:       Add a modal with Tests, list of Buttons
  * Version:           1.0.0
  * Author:            Anuj Parajuli <anuj.parajuli01@gmail.com>
- * License:           GNU General Public License v2.0
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       my-basics-plugin
+ * License:           GNU General Public License v3.0
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.en.html
+ * Text Domain:       floating-modal
  */
+
+/*
+Floating Modal is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+
+Floating Modal is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Floating Modal. If not, see https://www.gnu.org/licenses/gpl-3.0.en.html.
+*/
 
 define('FLM_BASE_DIR', __DIR__ . "/");
 define('FLM_BASE_URL', plugin_dir_url( __FILE__ ));
@@ -47,7 +62,7 @@ add_action("admin_menu", function() {
 
 add_action( 'admin_enqueue_scripts', 'FLM_add_script' );
 function FLM_add_script() {
-    wp_enqueue_script('dom-script', plugin_dir_url( __FILE__ ) . 'admin/js/cbsm.js#asyncdeferload', null, false, true);
+    wp_enqueue_script('dom-script', plugin_dir_url( __FILE__ ) . 'admin/js/flm.js#asyncdeferload', null, false, true);
     wp_enqueue_style('dom-style', plugin_dir_url( __FILE__ ) . 'admin/css/flm-style.css');
 }
 

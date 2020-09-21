@@ -9,11 +9,11 @@
 }
 .flm-modal-wrapper .flm-modal {
     width: 60%;
-    margin: 10% auto;
+    margin: 5% auto;
     text-align: center;
     color: #000;
     background: #FFF;
-    padding: 5%;
+    padding: 2% 5%;
     max-height: 75vh;
     position: relative;
 }
@@ -31,6 +31,10 @@
     text-align: center;
 }
 
+.flm-modal-wrapper .flm-modal .flm-modal-image {
+    width: 25%;
+}
+
 .flm-modal-wrapper .flm-modal .flm-modal-subtitle {
     margin-bottom: 15px;
 }
@@ -39,11 +43,12 @@
     padding: 5px 0;
     background: #609001;
     color: white;
-    line-height: 2.5em;
+    line-height: 1.3em;
     display: block;
     min-width: 25%;
     max-width: 50%;
-    margin: 10px auto;
+    margin: 5px auto;
+    font-size: 1.3em;
 }
 
 .flm-modal-wrapper .flm-modal .flm-modal-link:hover {
