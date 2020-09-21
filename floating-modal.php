@@ -5,6 +5,9 @@
  * Description:       Add a modal with delivery information to your website
  * Version:           1.0.0
  * Author:            Anuj Parajuli <anuj.parajuli01@gmail.com>
+ * License:           GNU General Public License v2.0
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       my-basics-plugin
  */
 
 define('FLM_BASE_DIR', __DIR__ . "/");
