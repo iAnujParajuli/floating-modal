@@ -1,0 +1,43 @@
+.flm-form .frm-group .input-field{
+    margin: 1.5em auto;
+}
+.flm-form .frm-group .input-field{
+    display: inline-block;
+}
+
+.input-field.input {
+    width: 100%;
+}
+.input-field.input-1, .input-field.input-2 {
+    width: 45%;
+}
+
+.input-field input,  .input-field .drop{
+    width: 50%;
+}
+.flm-form .frm-group .input-field label{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    min-width: 25%;
+    margin: 0  3em;
+}
+
+.fieldset {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 70%;
+}
+.fieldset legend{
+    font-weight: bold;
+}
+
+.drop .drop-display .item .dashicons-no-alt::before{
+    content: "\f335";
+    line-height: 1.6em;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    margin-left: 3px;
+    font-size: 1em;
+}
