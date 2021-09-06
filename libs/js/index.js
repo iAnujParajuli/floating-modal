@@ -1,4 +1,3 @@
-//Varun Dewan 2019
 var $ = {
    get: function(selector){ 
       var ele = document.querySelectorAll(selector);
